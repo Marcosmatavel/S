@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(10, 210, 255);
+}
+
+main{
+    background-color: white;
+    width: 200px;
+    height: 200pxw;
+}

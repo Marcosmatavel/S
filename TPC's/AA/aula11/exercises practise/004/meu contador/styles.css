@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: aqua;
+    color: #ffff;
+    font: normal 18px arial;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.bigbox{
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.inicio{
+    
+}

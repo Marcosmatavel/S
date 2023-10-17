@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+:root{
+    --gradient:  linear-gradient(45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient2: linear-gradient(to right, blue, gray, aqua, aquamarine, darkgreen);
+    --gradient3: linear-gradient(-45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient4: linear-gradient(to bottom,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 500vh;
+}
+
+.conteiner{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 55px 4.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.roll{
+    background-color: #000;
+    padding: 15px 4.5%;
+}
+
+header.roll a{
+    color: #FE775A;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+    
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.fundo{
+    height: 100vh;
+    background-image: url(ceu.jpg) ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo h1{
+    font-size: 4rem;
+}
+
+.fundo h1 span{
+    color: #FFAE81;
+    -webkit-text-stroke: .1rem black;
+}
+
+.btn-contato button{
+    width: 130px;
+    height: 45px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s;
+    background-color: #FE775A;
+}
+
+i{
+   color: #fff;
+
+}
+
+header div div a:hover{
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 0;
+    margin: .9px;
+    transition: .2s;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+:root{
+    --gradient:  linear-gradient(45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient2: linear-gradient(to right, blue, gray, aqua, aquamarine, darkgreen);
+    --gradient3: linear-gradient(-45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient4: linear-gradient(to bottom,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+}
+
+.out{
+    background-color: #000;
+    height: 96vh;
+    position: relative;
+}
+
+.out:hover{
+  
+}
+
+.in{
+    border:10px solid gray;
+    border-radius: 0.1px 100px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: rgb(232, 157, 20);
+
+    display: grid;
+    align-items: center;
+    place-content: center;
+}
+
+p{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}

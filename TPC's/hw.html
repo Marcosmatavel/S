@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha nacionalidade</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font: normal 20pt Arial aqua;
+        }
+        strong{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    De onde vc è :<input type="text" name="nac" id="nac">
+    <input type="button" value="Ver nacionalidade" onclick="ver()">
+    <div id = "resp">
+
+    </div>
+    <script>
+        function ver() {
+            var n = window.document.getElementById("nac")
+            var m = String(nac.value)
+            resp.innerHTML = `<p>Vc è de <strong>${m}</strong></p>`
+            if (m == "Mocambique" || "Moz"){
+                resp.innerHTML += `Vc è <strong>Moçambicano/a</strong>`
+            } else {
+                resp.innerHTML += `E a sua nacionalidade è alien`
+            }
+        }
+       
+    </script>
+</body>
+</html>

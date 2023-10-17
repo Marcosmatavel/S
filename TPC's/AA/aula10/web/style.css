@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient:  linear-gradient(45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient2: linear-gradient(to right, blue, gray, aqua, aquamarine, darkgreen);
+    --gradient3: linear-gradient(-45deg,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+    --gradient4: linear-gradient(to bottom,rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68) );
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+header{
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    background-color: bisque;
+    border-radius: 0 0 5px 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.502);
+}
+
+.elements-header{
+    display: flex;
+    align-items: center; 
+    margin: 0 0 0 15px;
+}
+
+.elements-header > nav{
+    margin: 45px;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 400;
+}
+
+.elements-header > nav:hover{
+    background-image: var(--gradient);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .4s;
+    color: #fff;
+}
+
+img{
+    width: 25px;
+}
+
+main > p{
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+    height: 40px;
+    border: 2px solid white;
+    box-shadow: 0 0 20px, 0 0 10px violet;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > p:hover{
+    animation: test 7s linear 2.5s infinite alternate;
+}
+
+@keyframes test{
+    0%{
+        color: #000;
+        background-color: #fff;
+        border: 3px solid black;
+        transform: scale(0deg);
+        border-radius: 0 20px;
+    }
+
+    50%{
+        color: skyblue;
+        background-color: bisque;
+        width: 250px;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    100%{
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, rgb(0, 166, 255), rgb(13, 13, 208), rgb(146, 21, 192), rgb(198, 140, 68));
+        transform: scale(360deg);
+        border-radius: 20px 0;
+    }
+}

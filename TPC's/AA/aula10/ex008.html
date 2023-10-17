@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        div{
+            font: normal 15pt Arial Aqua;
+        }
+        input{
+            background-color: rgba(61, 130, 139, 0.678);
+            width: 100px;
+            height: 40px;
+            font: normal 18pt Arial;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id = "resp">Resultado</div>
+    <script>
+        function somar(){
+           var tn1 = window.document.getElementById("txtn1")
+               tn2 = window.document.getElementById("txtn2")
+               resp = window.document.getElementById("resp")
+           var n1 = Number(tn1.value)
+               n2 = Number(tn2.value)
+               s = n1 + n2 
+               resp.innerHTML = `A soma entre os valores ${n1} e ${n2} e de ${s}`  
+        }
+    </script>
+</body>
+</html>
